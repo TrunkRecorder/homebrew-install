@@ -20,9 +20,10 @@ The included formula for `gr-osmosdr` v0.2.6 has been updated from the [original
 
 3. Install Trunk Recorder
 
-   | Version        | Command                                       |
-   | -------------- | --------------------------------------------- |
-   | Latest GitHub  | <pre>brew install trunk-recorder --head</pre> |
+   | Version                     |                                               |
+   | --------------------------- | --------------------------------------------- |
+   | Stable release v5.0.1       | <pre>brew install trunk-recorder</pre>        |
+   | Latest GitHub (recommended) | <pre>brew install trunk-recorder --head</pre> |
 
 4. [Configure](https://github.com/TrunkRecorder/trunk-recorder/blob/master/docs/CONFIGURE.md) Trunk Recorder for your system
 
