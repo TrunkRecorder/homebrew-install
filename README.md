@@ -22,7 +22,6 @@ The included formula for `gr-osmosdr` v0.2.6 has been updated from the [original
 
    | Version        | Command                                       |
    | -------------- | --------------------------------------------- |
-   | Stable release | <pre>brew install trunk-recorder</pre>        |
    | Latest GitHub  | <pre>brew install trunk-recorder --head</pre> |
 
 4. [Configure](https://github.com/TrunkRecorder/trunk-recorder/blob/master/docs/CONFIGURE.md) Trunk Recorder for your system
