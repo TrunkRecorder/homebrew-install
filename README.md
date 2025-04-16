@@ -6,7 +6,7 @@
 
 The Homebrew Package manager contains all the required dependencies to build Trunk Recorder and [gr-osmosdr](https://osmocom.org/projects/sdr/wiki/GrOsmoSDR) on MacOS with a few easy commands.
 
-## Installation
+## Install
 
 1. Install [Homebrew](https://brew.sh)
 
@@ -21,11 +21,24 @@ The Homebrew Package manager contains all the required dependencies to build Tru
    | Version                     |                                               |
    | --------------------------- | --------------------------------------------- |
    | Stable release v5.0.1       | <pre>brew install trunk-recorder</pre>        |
-   | Latest GitHub (recommended) | <pre>brew install trunk-recorder --head</pre> |
+   | Latest GitHub (recommended) | <pre>brew install trunk-recorder --HEAD</pre> |
 
 4. [Configure](https://github.com/TrunkRecorder/trunk-recorder/blob/master/docs/CONFIGURE.md) Trunk Recorder for your system
 
-## Uninstallation
+## Upgrade
+
+- Homebrew will automatically upgrade stable Trunk Recorder releases as they are updated:
+   ```
+   brew update
+   brew upgrade
+   ```
+
+- Installs using the `--HEAD` option require an additional command to pull updates from the Trunk Recorder repository:
+   ```
+   brew upgrade trunk-recorder --fetch-HEAD
+   ```
+
+## Uninstall
 
 1. Remove packages provided by this tap
    
