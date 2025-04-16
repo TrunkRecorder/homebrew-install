@@ -43,7 +43,7 @@ The Homebrew Package manager contains all the required dependencies to build Tru
 
 This Homebrew tap provides the following third-party packages:
 
-   | Package                                       | Description                                                                                                                                                                                           |
-   | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-   | [trunk-recorder](./Formula/trunk-recorder.rb) | Trunked & Conventional Radio Recorder                                                                                                                                                                 |
-   | [gr-osmosdr](./Formula/gr-osmosdr.rb)         | Osmocom GNU Radio Blocks<br>v0.2.6 update of the [original](https://github.com/Homebrew/homebrew-core/commit/593566b87c28e333e607ef69c224541278a66614) formula no longer available in `homebrew-core` |
+| Package                                       | Description                                                                                                                                                                                           |
+| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [trunk-recorder](./Formula/trunk-recorder.rb) | Trunked & Conventional Radio Recorder                                                                                                                                                                 |
+| [gr-osmosdr](./Formula/gr-osmosdr.rb)         | Osmocom GNU Radio Blocks<br>v0.2.6 update of the [original](https://github.com/Homebrew/homebrew-core/commit/593566b87c28e333e607ef69c224541278a66614) formula no longer available in `homebrew-core` |
