@@ -1,10 +1,19 @@
 class TrunkRecorder < Formula
   desc "Trunked & Conventional Radio Recorder"
   homepage "https://github.com/TrunkRecorder/trunk-recorder"
-  url "https://github.com/TrunkRecorder/trunk-recorder/archive/refs/tags/v5.0.1.tar.gz"
-  sha256 "1c9a8a625506c5b5cc14948404e70b86333ea9cd08c0cfef117f611497d5b2be"
   license "GPL-3.0-or-later"
   head "https://github.com/TrunkRecorder/trunk-recorder.git", branch: "master"
+
+  stable do
+    url "https://github.com/TrunkRecorder/trunk-recorder/archive/refs/tags/v5.0.1.tar.gz"
+    sha256 "1c9a8a625506c5b5cc14948404e70b86333ea9cd08c0cfef117f611497d5b2be"
+    # A patch is required to build with updated Boost libraries provided by Homebrew.
+    # Remove on next tagged release; these fixes are already present in the master branch.
+    patch do
+      url "https://raw.githubusercontent.com/TrunkRecorder/homebrew-install/1819dfd30a659f9b5b061b3cc27aeebf34a31469/Patches/trunk-recorder-5.0.1.diff"
+      sha256 "db20b1e0ac0534bc4fd189be93b6cf67d6bdd188ba8907e49c960760801df586"
+    end
+  end
 
   depends_on "cmake" => :build
   depends_on "cppunit" => :build
@@ -16,19 +25,12 @@ class TrunkRecorder < Formula
   depends_on "fmt"
   depends_on "gmp"
   depends_on "gnuradio"
-  depends_on "trunkrecorder/install/gr-osmosdr"
   depends_on "openssl@3"
   depends_on "sox"
   depends_on "spdlog"
+  depends_on "trunkrecorder/install/gr-osmosdr"
   depends_on "uhd"
   depends_on "volk"
-
-  stable do
-    patch do
-      url "https://raw.githubusercontent.com/TrunkRecorder/homebrew-install/refs/heads/main/Patches/trunk-recorder-5.0.1.diff"
-      sha256 "db20b1e0ac0534bc4fd189be93b6cf67d6bdd188ba8907e49c960760801df586"
-    end
-  end
 
   def install
     system "cmake", *std_cmake_args, "-B", "build"
