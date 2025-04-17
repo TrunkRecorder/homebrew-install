@@ -25,6 +25,8 @@ The Homebrew package manager contains all the required dependencies to build Tru
 
 4. [Configure](https://github.com/TrunkRecorder/trunk-recorder/blob/master/docs/CONFIGURE.md) Trunk Recorder for your system
 
+5. [**Optional for macOS**] Add a [LaunchDaemon service](https://github.com/TrunkRecorder/trunk-recorder/wiki/Running-Trunk-Recorder#running-as-a-service-on-macos) to start Trunk Recorder automatically
+
 ## Upgrade
 
 - Homebrew will automatically upgrade Trunk Recorder as new stable versions are released
