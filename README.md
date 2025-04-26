@@ -18,10 +18,10 @@ The Homebrew package manager contains all the required dependencies to build Tru
 
 3. Install Trunk Recorder
 
-   | Version                     |                                               |
-   | --------------------------- | --------------------------------------------- |
-   | Stable release v5.0.1       | <pre>brew install trunk-recorder</pre>        |
-   | Latest GitHub (recommended) | <pre>brew install trunk-recorder --HEAD</pre> |
+   | Version                                                                          |                                               |
+   | -------------------------------------------------------------------------------- | --------------------------------------------- |
+   | Stable [release](https://github.com/TrunkRecorder/trunk-recorder/releases)       | <pre>brew install trunk-recorder</pre>        |
+   | Latest [GitHub](https://github.com/TrunkRecorder/trunk-recorder/commits/master/) | <pre>brew install trunk-recorder --HEAD</pre> |
 
 4. [Configure](https://github.com/TrunkRecorder/trunk-recorder/blob/master/docs/CONFIGURE.md) Trunk Recorder for your system
 
