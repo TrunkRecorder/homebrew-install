@@ -53,6 +53,8 @@ class GrOsmosdr < Formula
     plugin_path.write "#{venv_root}/lib/python#{xy}/site-packages\n"
   end
 
+  patch :DATA
+
   test do
     (testpath/"test.cpp").write <<~EOS
       #include <osmosdr/device.h>
@@ -69,3 +71,18 @@ class GrOsmosdr < Formula
     system Formula["gnuradio"].libexec/"venv/bin/python", testpath/"testimport.py"
   end
 end
+
+__END__
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 3a6b0da..d2adbcb 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -119,7 +119,7 @@ endif()
+ ########################################################################
+ # Find boost
+ ########################################################################
+-find_package(Boost "1.65" REQUIRED chrono thread system)
++find_package(Boost "1.65" REQUIRED chrono thread)
+
+ if(NOT Boost_FOUND)
+     message(FATAL_ERROR "Boost required to compile osmosdr")
