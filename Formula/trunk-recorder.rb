@@ -1,8 +1,8 @@
 class TrunkRecorder < Formula
   desc "Trunked & Conventional Radio Recorder"
   homepage "https://github.com/TrunkRecorder/trunk-recorder"
-  url "https://github.com/TrunkRecorder/trunk-recorder/archive/refs/tags/v5.0.2.tar.gz"
-  sha256 "a153cf3b16b81e13e8bdb151a0c495d19a8fd46d63d8e76d9bc7750c2b0c7820"
+  url "https://github.com/TrunkRecorder/trunk-recorder/archive/refs/tags/v5.1.1.tar.gz"
+  sha256 "d94c77d141d4d2c15b0fb7e6c5f78c76f35fb3de31815f2102690d4231930c6c"
   license "GPL-3.0-or-later"
   head "https://github.com/TrunkRecorder/trunk-recorder.git", branch: "master"
 
